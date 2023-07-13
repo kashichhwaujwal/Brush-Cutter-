@@ -47,8 +47,14 @@ class _MachineInfoPageState extends State<MachineInfoPage> {
               child: Container(
                 height: 50,
                 width: 150,
-                decoration: BoxDecoration(color: Colors.blue),
-                child: Text('Right Motor Temp'),
+                decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(20)),
+                child: Center(
+                    child: Text(
+                  'Right Motor Temp',
+                  style: TextStyle(color: Colors.white),
+                )),
               ),
             ),
             SizedBox(
@@ -58,8 +64,14 @@ class _MachineInfoPageState extends State<MachineInfoPage> {
               child: Container(
                 height: 50,
                 width: 150,
-                decoration: BoxDecoration(color: Colors.blue),
-                child: Text('Left Motor Temp'),
+                decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(20)),
+                child: Center(
+                    child: Text(
+                  'Left Motor Temp',
+                  style: TextStyle(color: Colors.white),
+                )),
               ),
             ),
             SizedBox(
@@ -73,8 +85,15 @@ class _MachineInfoPageState extends State<MachineInfoPage> {
         Container(
           height: 50,
           width: 350,
-          decoration: BoxDecoration(color: Colors.blue),
-          child: Text('Alternate Temp'),
+          decoration: BoxDecoration(
+              color: Colors.blue, borderRadius: BorderRadius.circular(20)),
+          child: Center(
+              child: Text(
+            'Alternate Temp',
+            style: TextStyle(
+              color: Colors.white,
+            ),
+          )),
         ),
         SizedBox(
           height: 10,
@@ -89,8 +108,14 @@ class _MachineInfoPageState extends State<MachineInfoPage> {
               child: Container(
                 height: 50,
                 width: 70,
-                decoration: BoxDecoration(color: Colors.blue),
-                child: Text('Regenerative Resistor Temp'),
+                decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(20)),
+                child: Center(
+                    child: Text(
+                  'Regenerative Resistor Temp',
+                  style: TextStyle(color: Colors.white),
+                )),
               ),
             ),
             SizedBox(
@@ -100,8 +125,14 @@ class _MachineInfoPageState extends State<MachineInfoPage> {
               child: Container(
                 height: 50,
                 width: 70,
-                decoration: BoxDecoration(color: Colors.blue),
-                child: Text('Inside Controller Box Temp'),
+                decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(20)),
+                child: Center(
+                    child: Text(
+                  'Inside Controller Box Temp',
+                  style: TextStyle(color: Colors.white),
+                )),
               ),
             ),
             SizedBox(
@@ -111,8 +142,14 @@ class _MachineInfoPageState extends State<MachineInfoPage> {
               child: Container(
                 height: 50,
                 width: 70,
-                decoration: BoxDecoration(color: Colors.blue),
-                child: Text('SCiB Battery Temp'),
+                decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(20)),
+                child: Center(
+                    child: Text(
+                  'SCiB Battery Temp',
+                  style: TextStyle(color: Colors.white),
+                )),
               ),
             ),
             SizedBox(
@@ -129,26 +166,47 @@ class _MachineInfoPageState extends State<MachineInfoPage> {
             Container(
               height: 50,
               width: 80,
-              decoration: BoxDecoration(color: Colors.blue),
-              child: Text('12V PSV'),
+              decoration: BoxDecoration(
+                  color: Colors.blue, borderRadius: BorderRadius.circular(20)),
+              child: Center(
+                child: Text(
+                  '12V PSV',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
             ),
             Container(
               height: 50,
               width: 80,
-              decoration: BoxDecoration(color: Colors.blue),
-              child: Text('24V PSV'),
+              decoration: BoxDecoration(
+                  color: Colors.blue, borderRadius: BorderRadius.circular(20)),
+              child: Center(
+                  child: Text(
+                '24V PSV',
+                style: TextStyle(color: Colors.white),
+              )),
             ),
             Container(
               height: 50,
               width: 80,
-              decoration: BoxDecoration(color: Colors.blue),
-              child: Text('VM PSV'),
+              decoration: BoxDecoration(
+                  color: Colors.blue, borderRadius: BorderRadius.circular(20)),
+              child: Center(
+                  child: Text(
+                'VM PSV',
+                style: TextStyle(color: Colors.white),
+              )),
             ),
             Container(
               height: 50,
               width: 80,
-              decoration: BoxDecoration(color: Colors.blue),
-              child: Text('SCiB BV'),
+              decoration: BoxDecoration(
+                  color: Colors.blue, borderRadius: BorderRadius.circular(20)),
+              child: Center(
+                  child: Text(
+                'SCiB BV',
+                style: TextStyle(color: Colors.white),
+              )),
             ),
           ],
         ),
@@ -158,8 +216,13 @@ class _MachineInfoPageState extends State<MachineInfoPage> {
         Container(
           height: 50,
           width: 350,
-          decoration: BoxDecoration(color: Colors.blue),
-          child: Text('Serial Number'),
+          decoration: BoxDecoration(
+              color: Colors.blue, borderRadius: BorderRadius.circular(20)),
+          child: Center(
+              child: Text(
+            'Serial Number',
+            style: TextStyle(color: Colors.white),
+          )),
         ),
         SizedBox(
           height: 10,
@@ -167,8 +230,13 @@ class _MachineInfoPageState extends State<MachineInfoPage> {
         Container(
           height: 50,
           width: 350,
-          decoration: BoxDecoration(color: Colors.blue),
-          child: Text('Total Startup Time'),
+          decoration: BoxDecoration(
+              color: Colors.blue, borderRadius: BorderRadius.circular(20)),
+          child: Center(
+              child: Text(
+            'Total Startup Time',
+            style: TextStyle(color: Colors.white),
+          )),
         ),
         SizedBox(
           height: 10,
@@ -176,8 +244,13 @@ class _MachineInfoPageState extends State<MachineInfoPage> {
         Container(
           height: 50,
           width: 350,
-          decoration: BoxDecoration(color: Colors.blue),
-          child: Text('SCiB Charging Rate'),
+          decoration: BoxDecoration(
+              color: Colors.blue, borderRadius: BorderRadius.circular(20)),
+          child: Center(
+              child: Text(
+            'SCiB Charging Rate',
+            style: TextStyle(color: Colors.white),
+          )),
         ),
       ]),
     ));
