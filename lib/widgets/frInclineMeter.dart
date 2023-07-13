@@ -15,6 +15,8 @@ class FrInclineMeter extends StatelessWidget {
           Container(
             height: 300,
             child: SfRadialGauge(
+                enableLoadingAnimation: true,
+                animationDuration: 4500,
                 title: GaugeTitle(
                     text: 'F/R Incline Angle',
                     textStyle:
