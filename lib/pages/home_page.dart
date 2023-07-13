@@ -16,7 +16,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int connectState = 1;
+  bool connectState = false;
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            connectState == 1 ? InclineMeter() : InclineMeterBeforeConnect(),
+            connectState ? InclineMeter() : InclineMeterBeforeConnect(),
             Container(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -36,16 +36,16 @@ class _HomePageState extends State<HomePage> {
             SizedBox(
               height: 15,
             ),
-            ToggleSwitch(
-                // initialLabelIndex: 0,
-                totalSwitches: 2,
-                labels: ['on', 'off'],
-                onToggle: (index) {
-                  print(index);
-                  // setState(() {
-                  //   connectState = index!;
-                  // });
-                }),
+            Switch(
+              trackColor: MaterialStateProperty.all(Colors.black38),
+              activeColor: Colors.green.withOpacity(0.4),
+              inactiveThumbColor: Colors.red.withOpacity(0.4),
+              activeThumbImage: const AssetImage('assets/happy_emoji.png'),
+              inactiveThumbImage: const AssetImage('assets/sad_emoji.png'),
+              value: connectState,
+              onChanged: (value) =>
+                  {print(value), setState(() => connectState = value)},
+            ),
             SizedBox(
               height: 10,
             ),
